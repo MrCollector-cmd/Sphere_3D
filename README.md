@@ -1,6 +1,8 @@
 # Sphere_3D
+
 Herramienta para la creacion de interfaces graficas animadas con esferas 3D
-=======
+
+
 # Points Sphere 3D
 Para la creación y personalización de esferas con puntos de 3 dimensiones.
 
