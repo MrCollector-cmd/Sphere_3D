@@ -20,7 +20,7 @@ const pointsCount = 150; // Número de puntos en la esfera
 // Crear las esferas
 const sphere = new Sphere3D(centerX, centerY, radius, { color: 'green', quantity: pointsCount, size: 4, light:true, volumLight: 0.3});
 
-const sphere2 = new Sphere3D(centerX, centerY, radius2, { color: 'blue', quantity: pointsCount,light:true, size: 4, colorLight:"#33fff3", volumLight: 0.3});
+const sphere2 = new Sphere3D(centerX, centerY, radius2, { color: 'blue', quantity: pointsCount,light:true, size: 4, colorLight:"#33fff3", volumLight: 0.3,reverse:true});
 
 const sphere3 = new Sphere3D(centerX, centerY, radius3, { color: 'red', quantity: pointsCount,light:true, size: 4, volumLight: 0.2,}, 
     {factorX:0.01, factorY:0.01});
@@ -30,17 +30,17 @@ function animate() {
     ctx.clearRect(0, 0, canva.width, canva.height); // Limpiar el canvas
 
     sphere.updateRotation();
-    sphere2.updateRotation(true);
+    sphere2.updateRotation();
     sphere3.updateRotation();
 
-     // Actualizar las rotaciones de cada esfera
+    // Actualizar las rotaciones de cada esfera
     sphere2.initMouseMovement();
-    sphere.initMouseMovement();
+    sphere.initMouseMovement();    
 
     // Dibujar las tres esferas
-    sphere.drawSphere(sphere.spherePoints, ctx);
-    sphere2.drawSphere(sphere2.spherePoints, ctx);
-    sphere3.drawSphere(sphere3.spherePoints, ctx);
+    sphere.drawSphere(ctx);
+    sphere2.drawSphere(ctx);
+    sphere3.drawSphere(ctx);
 
     requestAnimationFrame(animate); // Continuar con la animación
 }

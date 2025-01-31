@@ -59,7 +59,7 @@ Para utilizar la manera de animación **Auto** solo hay que agregar un método a
         // sphere.updateRotation(true); cuando se le coloca "true" de parametro, la actualizaciones hacen que la esfera rote para el lado contrario
 
         // Método de dibujo
-        sphere.drawSphere(sphere.spherePoints,context)
+        sphere.drawSphere(context)
 
         /////////////////////////////
         requestAnimationFrame(loop)
@@ -79,7 +79,7 @@ Ahora para agregar la manera de animación **Follow** solo hay que agregar un m�
         sphere.initMouseMovement();
 
         // Método de dibujo
-        sphere.drawSphere(sphere.spherePoints,context)
+        sphere.drawSphere(context)
 
         /////////////////////////////
         requestAnimationFrame(loop)
@@ -101,6 +101,7 @@ Se puede modificar tanto la vista de los puntos como la rotación de la esfera d
         light:true, // Iluminación de los puntos (opcional)
         volumLight: 0.4 // Cantidad de iluminación de los puntos (opcional)
         colorLight: "#33fff3", //Color de la luz (opcional)
+        reverse:true // Hace que la esfera rote en sentido contrario
     }
     const factors = {
         factorX: 0.001, // Velocidad de rotación eje (opcional)
