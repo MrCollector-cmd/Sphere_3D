@@ -1,15 +1,12 @@
-<<<<<<< HEAD
-# Sphere_3D
-Herramienta para la creacion de interfaces graficas animadas con esferas 3D
-=======
 # Points Sphere 3D
-Para la creación y personalización de esferas con puntos de 3 dimensiones.
+Herramienta para la creacion de interfaces graficas animadas con esferas 3D
+creación y personalización de esferas con puntos de 3 dimensiones.
 
 ## Información de uso
 
 Para empezar, necesitamos inicializar un canvas y tiene 3 formas de uso.
 
-A la hora de inicializamos el objeto con la clase **Sphere3D** y le pasamos con máxima importancia los siguientes parámetros
+A la hora de inicializar el objeto con la clase **Sphere3D** y le pasamos con máxima importancia los siguientes parámetros
 
 -> **x**, **y** : son la posición en el canvas donde quieren que aparezca la esfera.
 
